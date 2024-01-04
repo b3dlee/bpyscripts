@@ -1,0 +1,10 @@
+import bpy
+
+class MyCustomOperator(bpy.types.Operator):
+    bl_idname = "my.custom_operator"
+    bl_label = "Custom Operator"
+
+    my_float = bpy.props.FloatProperty(name="My Float")
+    my_int = bpy.props.IntProperty(name="My Int")
+    my_string = bpy.props.StringProperty(name="My String")
+    my_bool = bpy.props.BoolProperty(name="My Bool")
